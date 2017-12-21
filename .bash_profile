@@ -104,4 +104,8 @@ bind "set show-all-if-ambiguous on"
 export LC_ALL="tr_TR.UTF-8"
 
 export PATH="/Users/hhp/development/IDEFolder/gcc-arm-none-eabi-5_4-2016q3/bin:/Users/hhp/development/IDEFolder/gcc-arm-none-eabi-5_4-2016q3/arm-none-eabi/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH"
+alias test="ssh hasan@192.168.2.1 -p 89"
+
+alias pingg="ping google.com"
 
