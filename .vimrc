@@ -1,8 +1,8 @@
-filetype off
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
-
 set nocompatible
+filetype off
+execute pathogen#infect()
+execute pathogen#helptags()
+filetype plugin indent on
 
 set modelines=0
 
@@ -11,6 +11,7 @@ set modelines=0
 " set softtabstop=4
 " set expandtab
 
+set mouse=a
 
 set encoding=utf-8
 set scrolloff=3
@@ -26,12 +27,15 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
 set undofile
 
-
+set number
+" set relativenumber
 
 set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
+
+map nt :NERDTreeToggle<Enter>
+
